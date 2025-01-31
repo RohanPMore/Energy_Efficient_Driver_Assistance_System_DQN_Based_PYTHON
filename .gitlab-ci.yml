@@ -1,0 +1,29 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay2
+
+stages:
+  - build
+  
+# Only run this job if changes are detected in the test_project directory
+#test_subfolder_pipeline:
+build-job:
+  stage: build
+  script:
+    - docker info
+    - cd test
+    - docker build -t test_project_image .
+    - docker run --rm test_project_image
+  #only:
+    #changes:
+      #- test_project/**
+
+# Optional: Cache for Docker to speed up builds
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .docker
