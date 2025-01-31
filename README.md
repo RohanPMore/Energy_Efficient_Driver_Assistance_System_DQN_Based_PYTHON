@@ -75,7 +75,7 @@ Detailed instructions on how to run the simulations and models:
    python acc_dqn_exe.py
    ```
 
-*(Provide specific details on the expected inputs, configuration settings, and any other necessary information to run these scripts.)*
+To be updated: *(Provide specific details on the expected inputs, configuration settings, and any other necessary information to run these scripts.)*
 
 ## Project Structure
 
@@ -98,14 +98,6 @@ Energy_Efficient_Driver_Assistance_System_DQN_Based_PYTHON/
 ## Contributing
 
 Contributions are welcome! If you have suggestions or improvements, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- [Deep Reinforcement Learning-Based Vehicle Energy Efficiency Autonomous Learning System](https://github.com/Luoyadan/DQN_vehicle)
 
 ---
 
